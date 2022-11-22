@@ -10,8 +10,8 @@ object MyDatabase {
     fun init() {
         val driverClassName = "org.postgresql.Driver"
         val jdbcURL = "jdbc:postgresql://localhost:5432/tabibu"
-        val user ="postgres"
-        val password="borauhai"
+        val user =""
+        val password=""
         val database = Database.connect(jdbcURL, driverClassName, user, password)
 
         transaction(database) {
